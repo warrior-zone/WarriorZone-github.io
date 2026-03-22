@@ -11,12 +11,14 @@
 
 <link rel="stylesheet" href="../css/styles.css">
 
+<!-- ✅ FONT AWESOME (FIX TELEGRAM ICON) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
 
 <!-- SIDEBAR -->
-
 <div class="sidebar">
 
 <a href="../index.html">Home</a>
@@ -29,31 +31,32 @@
 <a href="fairplay.html">Fair Play</a>
 <a href="terms.html">Terms</a>
 <a href="privacy.html">Privacy</a>
+<a href="refund.html">Refund</a>
+<a href="disclaimer.html">Disclaimer</a>
 <a href="contact.html">Contact us</a>
 
 </div>
 
+<div class="overlay"></div>
+
 <!-- NAVBAR -->
-
 <nav class="navbar">
-
 <div class="container nav-inner">
 
 <div class="hamburger">&#9776;</div>
 
-<!-- UPDATED LOGO -->
+<!-- ✅ LOGO FIX -->
 <div class="logo">
-  <span class="logo-text">WarriorZone</span>
+  <a href="../index.html">
+    <span class="logo-text">WarriorZone</span>
+  </a>
 </div>
 
 </div>
-
 </nav>
 
-<!-- PAGE HEADER -->
-
+<!-- HEADER -->
 <section class="section">
-
 <div class="container">
 
 <h1 class="section-title">Support Center</h1>
@@ -64,41 +67,83 @@ tournament participation, wallet issues, and general platform questions.
 </p>
 
 </div>
-
 </section>
 
 <!-- CONTACT FORM -->
-
 <section class="section">
-
 <div class="container">
-
-<h2 class="section-title">Contact Support</h2>
 
 <div class="card" style="max-width:600px;margin:auto;">
 
-<form>
+<h3 style="text-align:center;margin-bottom:20px;">Send Us a Message</h3>
 
-<input type="text" placeholder="Your Name" required style="width:100%;padding:12px;margin-bottom:15px;border-radius:8px;border:none;">
+<form id="contactForm">
 
-<input type="email" placeholder="Your Email" required style="width:100%;padding:12px;margin-bottom:15px;border-radius:8px;border:none;">
+<input type="text" id="name" placeholder="Your Name" required>
 
-<textarea placeholder="Your Message" rows="5" required style="width:100%;padding:12px;margin-bottom:15px;border-radius:8px;border:none;"></textarea>
+<input type="email" id="email" placeholder="Your Email" required>
 
-<button class="btn" type="submit">Send Message</button>
+<textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+
+<button type="submit" class="btn" style="width:100%;">Send Message</button>
 
 </form>
 
 </div>
 
 </div>
-
 </section>
 
-<!-- FAQ SECTION -->
-
+<!-- TELEGRAM SUPPORT -->
 <section class="section">
+<div class="container">
 
+<div class="card" style="text-align:center; max-width:520px; margin:auto;">
+
+<!-- TELEGRAM ICON -->
+<div style="margin-bottom:15px;">
+<i class="fa-brands fa-telegram" style="font-size:50px; color:#0088cc;"></i>
+</div>
+
+<h3>Need Instant Help?</h3>
+
+<p style="color:#9ca3af; margin-bottom:15px;">
+Join our official Telegram support channel for quick assistance, match updates, and announcements.
+</p>
+
+<p style="color:#9ca3af; margin-bottom:10px;">
+Telegram: <strong>@WarriorZoneSupport</strong>
+</p>
+
+<p style="color:#22c55e; font-weight:600; margin-bottom:20px;">
+⚡ Fast Support – Usually replies within minutes
+</p>
+
+<a href="https://t.me/WarriorZoneSupport" target="_blank" class="btn">
+<i class="fa-brands fa-telegram"></i> Join Telegram Support
+</a>
+
+</div>
+
+</div>
+</section>
+
+<!-- EXTRA CONTACT INFO -->
+<section class="section">
+<div class="container">
+
+<div style="text-align:center; color:#9ca3af;">
+
+<p>Email: <strong>support.warriorzone@gmail.com</strong></p>
+<p>Telegram Support: <strong>@WarriorZoneSupport</strong></p>
+
+</div>
+
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
 <div class="container">
 
 <h2 class="section-title">Frequently Asked Questions</h2>
@@ -106,65 +151,47 @@ tournament participation, wallet issues, and general platform questions.
 <div class="cards">
 
 <div class="card">
-<div class="faq-question" style="cursor:pointer;font-weight:bold;">
-How do I join a tournament?
-</div>
-<div class="faq-answer" style="display:none;margin-top:10px;color:#9ca3af;">
-Players can browse available tournaments on the platform dashboard and
-register their team by paying the required entry fee if applicable.
+<div class="faq-question">How do I join a tournament?</div>
+<div class="faq-answer">
+Players can browse available tournaments and register by paying entry fees.
 </div>
 </div>
 
 <div class="card">
-<div class="faq-question" style="cursor:pointer;font-weight:bold;">
-How do I withdraw my winnings?
-</div>
-<div class="faq-answer" style="display:none;margin-top:10px;color:#9ca3af;">
-Players can request withdrawals through the wallet section. Withdrawals
-are processed according to the platform's withdrawal policies.
+<div class="faq-question">How do I withdraw my winnings?</div>
+<div class="faq-answer">
+Withdraw via wallet. Processing takes 1–5 working days.
 </div>
 </div>
 
 <div class="card">
-<div class="faq-question" style="cursor:pointer;font-weight:bold;">
-What happens if a player cheats?
-</div>
-<div class="faq-answer" style="display:none;margin-top:10px;color:#9ca3af;">
-WarriorZone enforces strict anti-cheat rules. Players found using cheats
-or unfair advantages may be banned from tournaments or suspended.
+<div class="faq-question">What happens if a player cheats?</div>
+<div class="faq-answer">
+Strict bans and disqualification apply.
 </div>
 </div>
 
 <div class="card">
-<div class="faq-question" style="cursor:pointer;font-weight:bold;">
-Can I create my own team?
-</div>
-<div class="faq-answer" style="display:none;margin-top:10px;color:#9ca3af;">
-Yes. Players can create teams, invite friends, and register their squad
-for tournaments directly through the platform.
+<div class="faq-question">Can I create my own team?</div>
+<div class="faq-answer">
+Yes, you can create and manage teams easily.
 </div>
 </div>
 
 </div>
 
 </div>
-
 </section>
 
 <!-- FOOTER -->
-
 <footer class="footer">
-
 <div class="container">
-
 <p>© 2026 WarriorZone. All rights reserved.</p>
-
 </div>
-
 </footer>
 
+<!-- MAIN SCRIPT -->
 <script src="../js/script.js"></script>
 
 </body>
-
 </html>
